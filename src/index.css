@@ -37,6 +37,7 @@
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }
 
@@ -64,4 +65,10 @@
 .scroll-reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
